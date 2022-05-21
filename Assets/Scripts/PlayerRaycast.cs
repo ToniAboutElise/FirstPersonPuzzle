@@ -17,7 +17,7 @@ public class PlayerRaycast : MonoBehaviour
         layerMask = ~layerMask;
         RaycastHit hit;
 
-        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, 1.8f, layerMask))
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, 1.3f, layerMask))
         {
             _raycastColor = Color.red;
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, _raycastColor);
