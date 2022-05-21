@@ -2,11 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public static class Player
+public class Player : MonoBehaviour
 {
-    [SerializeField] private static Transform _lookableTransform;
+    public static Player instance;
 
-    public static Transform GetLookableTransform() { return _lookableTransform; }
+    [SerializeField] private Transform _lookableTransform;
 
+    public Transform GetLookableTransform() { return _lookableTransform; }
 
+    private void Awake()
+    {
+        if(instance == null)
+        {
+            instance = this;
+        }
+    }
 }
