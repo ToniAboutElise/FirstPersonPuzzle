@@ -14,6 +14,8 @@ namespace StarterAssets
 #endif
 	public class FirstPersonController : MonoBehaviour
 	{
+		public static FirstPersonController instance;
+
 		[Header("Player")]
 		[Tooltip("Move speed of the character in m/s")]
 		public float MoveSpeed = 4.0f;
@@ -58,6 +60,7 @@ namespace StarterAssets
 		private float _cinemachineTargetPitch;
 
 		// player
+		private bool _canMoveAndJump = true;
 		private float _speed;
 		private float _rotationVelocity;
 		private float _verticalVelocity;
@@ -73,8 +76,15 @@ namespace StarterAssets
 
 		private const float _threshold = 0.01f;
 
+		public void SetCanMoveAndJump(bool canMoveAndJump) { _canMoveAndJump = canMoveAndJump; }
+
 		private void Awake()
 		{
+			if(instance == null)
+            {
+				instance = this;
+            }
+
 			// get a reference to our main camera
 			if (_mainCamera == null)
 			{
@@ -94,14 +104,20 @@ namespace StarterAssets
 
 		private void Update()
 		{
-			JumpAndGravity();
-			GroundedCheck();
-			Move();
+			if(_canMoveAndJump == true) 
+			{ 
+				JumpAndGravity();
+				GroundedCheck();
+				Move();
+			}
 		}
 
 		private void LateUpdate()
 		{
-			CameraRotation();
+			if (_canMoveAndJump == true)
+			{
+				CameraRotation();
+			}
 		}
 
 		private void GroundedCheck()
