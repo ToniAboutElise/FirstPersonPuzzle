@@ -9,10 +9,14 @@ public class InteractableObject : MonoBehaviour
     public virtual void StartInteracting()
     {
         FirstPersonController.instance.SetCanMoveAndJump(false);
+        Player.instance.SetInteractionStatus(Player.InteractionStatus.INTERACTING);
+        Player.instance.SetCurrentInteractableObject(this);
     }
 
     public virtual void StopInteracting()
     {
         FirstPersonController.instance.SetCanMoveAndJump(true);
+        Player.instance.SetInteractionStatus(Player.InteractionStatus.NOT_INTERACTING);
+        Player.instance.SetCurrentInteractableObject(null);
     }
 }

@@ -25,13 +25,16 @@ public class PlayerRaycast : MonoBehaviour
             if (hit.transform.gameObject.GetComponent<InteractableObject>())
             {
                 _raycastColor = Color.blue;
-                hit.transform.gameObject.GetComponent<InteractableObject>().StartInteracting();
+                
+                if(Player.instance.GetCurrentInteractableObject() == null && Player.instance.GetInteractionButtonStatus() == Player.InteractionButtonStatus.PRESSED && Player.instance.GetInteractionStatus() == Player.InteractionStatus.NOT_INTERACTING) 
+                { 
+                    hit.transform.gameObject.GetComponent<InteractableObject>().StartInteracting();
+                }
             }
         }
         else
         {
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 1, _raycastColor);
-            Debug.Log("Did not Hit");
         }
     }
 }
