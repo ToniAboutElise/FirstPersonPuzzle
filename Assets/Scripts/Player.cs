@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class Player : MonoBehaviour
 {
     public static Player instance;
 
     [SerializeField] private Transform _lookableTransform;
+    [SerializeField] private Volume _volume;
     private PlayerInputActions _playerInputActions;
     private InteractableObject _currentInteractableObject;
 
@@ -34,6 +36,7 @@ public class Player : MonoBehaviour
     }
 
     public Transform GetLookableTransform() { return _lookableTransform; }
+    public Volume GetVolume() { return _volume; }
     public InteractionButtonStatus GetInteractionButtonStatus() { return _interactionButtonStatus; }
     public BackButtonStatus GetBackButtonStatus() { return _backButtonStatus; }
     public InteractionStatus GetInteractionStatus() { return _interactionStatus; }
