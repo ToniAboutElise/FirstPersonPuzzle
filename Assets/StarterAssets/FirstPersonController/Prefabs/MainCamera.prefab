@@ -70,12 +70,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9005220659476430818}
-  - component: {fileID: 9005220659476430821}
+  - component: {fileID: 2759461540273751251}
   - component: {fileID: 9005220659476430820}
   - component: {fileID: 9018249871969862650}
   - component: {fileID: 7093274977929601117}
   - component: {fileID: 7178313574257286800}
-  - component: {fileID: 1341351263}
+  - component: {fileID: 8602685325046519270}
   m_Layer: 0
   m_Name: MainCamera
   m_TagString: MainCamera
@@ -98,7 +98,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!20 &9005220659476430821
+--- !u!20 &2759461540273751251
 Camera:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -209,7 +209,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _lookableTransform: {fileID: 5397260340610555979}
   _volume: {fileID: 0}
---- !u!114 &1341351263
+--- !u!114 &8602685325046519270
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -229,7 +229,7 @@ MonoBehaviour:
   m_RendererIndex: 0
   m_VolumeLayerMask:
     serializedVersion: 2
-    m_Bits: 63
+    m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
   m_RenderPostProcessing: 1
