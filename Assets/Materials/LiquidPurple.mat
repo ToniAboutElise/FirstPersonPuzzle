@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Liquid
+  m_Name: LiquidPurple
   m_Shader: {fileID: -6465566751694194690, guid: 8e097534a16596f4cb5c1bae9befcc50, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -81,7 +81,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - Vector1_3070d6b64383474ebf201f256174b9f3: 0.05
-    - Vector1_57547a27c80f4c9cbc02cbb713d85843: 0.555
+    - Vector1_57547a27c80f4c9cbc02cbb713d85843: 0.542
     - Vector1_e2e7a0e6f61b4c61bab343b789a7ee36: 0.05
     - _AlphaClip: 0
     - _Blend: 0
@@ -112,8 +112,8 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - Color_7f12c001bb5842f7a42862d247976d20: {r: 0.9150943, g: 0.06474723, b: 0.13963479, a: 0}
-    - Color_e40875125bd64f8795b9a28999f5ffa8: {r: 1, g: 0, b: 0.082353115, a: 0}
+    - Color_7f12c001bb5842f7a42862d247976d20: {r: 0.05018891, g: 0.003921565, b: 0.16078432, a: 0}
+    - Color_e40875125bd64f8795b9a28999f5ffa8: {r: 0.21681976, g: 0, b: 1, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
