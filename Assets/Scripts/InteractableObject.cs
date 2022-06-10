@@ -19,4 +19,9 @@ public class InteractableObject : MonoBehaviour
         Player.instance.SetInteractionStatus(Player.InteractionStatus.NOT_INTERACTING);
         Player.instance.SetCurrentInteractableObject(null);
     }
+
+    public virtual void WhileInteracting()
+    {
+
+    }
 }

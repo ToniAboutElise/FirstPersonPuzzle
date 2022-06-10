@@ -37,6 +37,7 @@ public class Player : MonoBehaviour
 
     public Transform GetLookableTransform() { return _lookableTransform; }
     public Volume GetVolume() { return _volume; }
+    public PlayerInputActions GetPlayerInputActions() { return _playerInputActions; }
     public InteractionButtonStatus GetInteractionButtonStatus() { return _interactionButtonStatus; }
     public BackButtonStatus GetBackButtonStatus() { return _backButtonStatus; }
     public InteractionStatus GetInteractionStatus() { return _interactionStatus; }
@@ -84,9 +85,18 @@ public class Player : MonoBehaviour
         }
     }
 
+    private void CurrentObjectInteraction()
+    {
+        if(_currentInteractableObject != null)
+        {
+            _currentInteractableObject.WhileInteracting();
+        }
+    }
+
     private void FixedUpdate()
     {
         InteractionInputManagement();
+        CurrentObjectInteraction();
         CheckStopInteracting();
     }
 }

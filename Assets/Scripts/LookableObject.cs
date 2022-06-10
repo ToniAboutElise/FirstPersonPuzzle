@@ -6,14 +6,16 @@ using UnityEngine.Rendering.Universal;
 public class LookableObject : InteractableObject
 {
     [SerializeField] private Transform _originalTransform;
-    private DepthOfField depthOfField;
+    private DepthOfField _depthOfField;
+    private float _clampedYInput = 0;
+    private float _clampedXInput = 0;
     public override void StartInteracting()
     {
         base.StartInteracting();
         _interactableObject.transform.SetParent(Player.instance.GetLookableTransform());
-        if(Player.instance.GetVolume().profile.TryGet<DepthOfField>(out depthOfField))
+        if(Player.instance.GetVolume().profile.TryGet<DepthOfField>(out _depthOfField))
         {
-            depthOfField.active = true;
+            _depthOfField.active = true;
         }
         //LeanTween.value(Player.instance.GetVolume().profile.TryGet<>)
         LeanTween.move(_interactableObject, Player.instance.GetLookableTransform(), 3.5f * Time.deltaTime);
@@ -23,10 +25,18 @@ public class LookableObject : InteractableObject
     {
         base.StopInteracting();
         _interactableObject.transform.SetParent(transform);
-        if (Player.instance.GetVolume().profile.TryGet<DepthOfField>(out depthOfField))
+        if (Player.instance.GetVolume().profile.TryGet<DepthOfField>(out _depthOfField))
         {
-            depthOfField.active = false;
+            _depthOfField.active = false;
         }
         LeanTween.move(_interactableObject, _originalTransform, 2 * Time.deltaTime);
+    }
+
+    public override void WhileInteracting()
+    {
+        base.WhileInteracting();
+        _clampedYInput = Mathf.Clamp(Player.instance.GetPlayerInputActions().Player.Camera.ReadValue<Vector2>().y, -1, 1);
+        _clampedXInput = Mathf.Clamp(Player.instance.GetPlayerInputActions().Player.Camera.ReadValue<Vector2>().x, -1, 1);
+        _interactableObject.transform.localEulerAngles += new Vector3(_clampedYInput * 2, _clampedXInput * 2, 0);
     }
 }

@@ -70,7 +70,7 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                     ""name"": ""Camera"",
                     ""type"": ""Value"",
                     ""id"": ""28489bb3-d6c7-4d4e-ac58-fbd818720247"",
-                    ""expectedControlType"": ""Stick"",
+                    ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """"
                 },
@@ -297,6 +297,17 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                     ""name"": """",
                     ""id"": ""46d65939-5c64-4dc2-bb32-083e6074b3b7"",
                     ""path"": ""<Gamepad>/rightStick"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Camera"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""8bffe8f0-3577-4740-a1ec-7cc81a281869"",
+                    ""path"": ""<Mouse>/delta"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
