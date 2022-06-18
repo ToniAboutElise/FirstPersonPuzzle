@@ -173,6 +173,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7459379280606504151}
+  - component: {fileID: 9020597609290231683}
   m_Layer: 0
   m_Name: LargeBoxWithCloth2
   m_TagString: Untagged
@@ -197,6 +198,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &9020597609290231683
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5258413279387328267}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1986266, y: 0.7804651, z: 1.961771}
+  m_Center: {x: -1.6987801, y: -1.061084, z: -2.2580702}
 --- !u!1001 &5254171966034969011
 PrefabInstance:
   m_ObjectHideFlags: 0

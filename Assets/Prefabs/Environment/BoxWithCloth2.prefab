@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1587869316426305335}
   - component: {fileID: 2424877442588606610}
   - component: {fileID: 450943143450965080}
+  - component: {fileID: 1079252559510644775}
   m_Layer: 0
   m_Name: BoxWithCloth2
   m_TagString: Untagged
@@ -83,6 +84,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1079252559510644775
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2108509355461924237}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.4377134, y: 2.3467555, z: 2.2643275}
+  m_Center: {x: -0.0010168875, y: 0.07427427, z: 0.13216239}
 --- !u!1001 &5425801975013404596
 PrefabInstance:
   m_ObjectHideFlags: 0
