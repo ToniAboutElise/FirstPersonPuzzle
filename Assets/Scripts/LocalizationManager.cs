@@ -54,6 +54,7 @@ public class LocalizationManager : MonoBehaviour
             if(targetKey == keyString.Split(',')[0])
             {
                 localizationKey.SetKeyText(keyString.Split(',')[(int)language + 1]);
+                return;
             }
             else
             {
