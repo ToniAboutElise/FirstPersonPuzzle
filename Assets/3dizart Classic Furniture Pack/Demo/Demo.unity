@@ -783,6 +783,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gothic Window 2 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 498442258174963062, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2128431684552511906, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2948379582438259336, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5065957018367876929, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5159487136968495834, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5619154031437048290, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -831,6 +851,26 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 567087085ff81be478cd614bd7a27700, type: 3}
+    - target: {fileID: 6037814337227580765, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6062585279737117793, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7012479492087684342, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8089989505239594990, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8829684538435571603, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
 --- !u!4 &189983275 stripped
@@ -1460,6 +1500,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gothic Window 2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1274068912892525130, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1718484276356879273, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2128431684552511906, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2484640348442828950, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5159487136968495834, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5619154031437048290, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -1508,6 +1568,22 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 0d62e6134401b934db98a96034482f0a, type: 3}
+    - target: {fileID: 6062585279737117793, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7012479492087684342, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8043901797446197499, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8829684538435571603, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
 --- !u!1001 &354528954
@@ -2744,6 +2820,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gothic Window 2 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 498442258174963062, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 756056545210610656, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1718484276356879273, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2484640348442828950, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5159487136968495834, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5619154031437048290, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
       propertyPath: m_RootOrder
       value: 29
@@ -2792,6 +2888,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 67e2c172b2e486c4a8e0caf63056df0f, type: 3}
+    - target: {fileID: 6037814337227580765, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6062585279737117793, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6240903122260024394, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7978901621282131791, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -8565,6 +8673,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gothic Window 2 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 498442258174963062, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1274068912892525130, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1718484276356879273, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2128431684552511906, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2484640348442828950, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2948379582438259336, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5065957018367876929, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5619154031437048290, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -8613,6 +8749,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 640f8a19e7a44174ea1c1ff0b2faa416, type: 3}
+    - target: {fileID: 6062585279737117793, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8043901797446197499, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8089989505239594990, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
 --- !u!4 &1523733972 stripped
@@ -9421,6 +9569,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gothic Window 2 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 498442258174963062, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1718484276356879273, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2484640348442828950, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5159487136968495834, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5619154031437048290, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
       propertyPath: m_RootOrder
       value: 17
@@ -9469,6 +9633,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 67e2c172b2e486c4a8e0caf63056df0f, type: 3}
+    - target: {fileID: 6037814337227580765, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6062585279737117793, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6240903122260024394, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
 --- !u!4 &1659435647 stripped
@@ -10172,6 +10348,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gothic Window 2 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 498442258174963062, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1274068912892525130, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1718484276356879273, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2484640348442828950, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2948379582438259336, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5065957018367876929, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5619154031437048290, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
       propertyPath: m_RootOrder
       value: 28
@@ -10220,6 +10420,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 567087085ff81be478cd614bd7a27700, type: 3}
+    - target: {fileID: 6037814337227580765, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8043901797446197499, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8089989505239594990, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 063617b034fbfc74d94d6d69ea80cae0, type: 3}
 --- !u!4 &1749100445 stripped
