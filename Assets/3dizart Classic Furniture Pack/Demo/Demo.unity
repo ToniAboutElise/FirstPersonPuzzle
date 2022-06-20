@@ -6590,12 +6590,12 @@ GameObject:
   - component: {fileID: 1112256395}
   - component: {fileID: 1112256394}
   m_Layer: 0
-  m_Name: TestCanvas
+  m_Name: LocalizationTestCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1112256394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12252,7 +12252,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 3495900c5471857478b663922a4d1288, type: 2}
+  - {fileID: 2100000, guid: 6288304b5bb8d4c448d66b57969e0572, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
