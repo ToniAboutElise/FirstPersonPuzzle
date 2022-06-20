@@ -38,6 +38,6 @@ public class LookableObject : InteractableObject
         base.WhileInteracting();
         _clampedYInput = Mathf.Clamp(Player.instance.GetPlayerInputActions().Player.Move.ReadValue<Vector2>().y, -1, 1);
         _clampedXInput = Mathf.Clamp(Player.instance.GetPlayerInputActions().Player.Move.ReadValue<Vector2>().x, -1, 1);
-        _interactableObject.transform.Rotate(new Vector3(_clampedYInput * 2, -_clampedXInput * 2, 0), Space.World);
+        _interactableObject.transform.RotateAround(_interactableObject.transform.parent.position, new Vector3(-_clampedYInput * 4, -_clampedXInput * 4, 0), 1);
     }
 }
