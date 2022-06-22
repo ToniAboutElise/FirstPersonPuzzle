@@ -31,7 +31,6 @@ public class SpinningObject : InteractableObject
 
     private void Start()
     {
-        transform.localEulerAngles = new Vector3(0, 0, 0);
         CheckRotationStatus();
     }
 
@@ -80,6 +79,7 @@ public class SpinningObject : InteractableObject
         if ((int)_objectValue == (int)_targetValue)
         {
             _rotationStatus = RotationStatus.Correct;
+            Debug.Log("Correct");
             transform.parent.GetComponent<SpinningObjectsManager>().CheckAllSpinningObjectsRotationStatus();
         }
         else
