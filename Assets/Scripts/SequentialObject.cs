@@ -27,7 +27,6 @@ public class SequentialObject : InteractableObject
             _state = State.Pressed;
             transform.parent.GetComponent<SequentialObjectsManager>().SequentialObjectWasPressed(this);
             
-            //USE THIS LEANTWEEN TO LIGHT UP AND DOWN THE SEQUENTIAL OBJECT AND ALLOW INTERACTION ONCE IT'S DONE
             LeanTween.color(gameObject, _lightUpColorColor, 0.5f).setOnComplete(() =>
             {
                 LeanTween.color(gameObject, _disabledColor, 0.5f).setOnComplete(() =>
@@ -35,12 +34,6 @@ public class SequentialObject : InteractableObject
                     _state = State.NonPressed;
                 });
             });
-            /*
-            LeanTween.value(0, 1, 0.5f).setOnComplete(() =>
-            {
-                _state = State.NonPressed;
-            });
-            */
         }
     }
 
