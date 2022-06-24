@@ -7,6 +7,13 @@ public class SequentialObjectsManager : PuzzleManager
     [SerializeField] private List<SequentialObject> _sequentialObjectsInCorrectOrder = new List<SequentialObject>();
     [SerializeField] private List<SequentialObject> _currentSequentialObjectsOrder = new List<SequentialObject>();
 
+    private void Update()
+    {
+        if(_currentSequentialObjectsOrder.Count > 0 && Vector3.Distance(Player.instance.transform.position, transform.position) > 1.7f)
+        {
+            ResetPuzzle();
+        }
+    }
 
     public override void PuzzleCompleted()
     {
