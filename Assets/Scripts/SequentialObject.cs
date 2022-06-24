@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class SequentialObject : InteractableObject
 {
+    [SerializeField] private Color _lightUpColorColor;
+    [SerializeField] private Color _disabledColor = new Color(0,0,0,0);
     private State _state = State.NonPressed;
     public enum State
     {
@@ -13,6 +15,11 @@ public class SequentialObject : InteractableObject
 
     public State GetState() { return _state; }
 
+    private void Start()
+    {
+        GetComponent<Renderer>().material.color = _disabledColor;
+    }
+
     public override void StartInteracting()
     {
         if (_state == State.NonPressed)
@@ -21,10 +28,19 @@ public class SequentialObject : InteractableObject
             transform.parent.GetComponent<SequentialObjectsManager>().SequentialObjectWasPressed(this);
             
             //USE THIS LEANTWEEN TO LIGHT UP AND DOWN THE SEQUENTIAL OBJECT AND ALLOW INTERACTION ONCE IT'S DONE
+            LeanTween.color(gameObject, _lightUpColorColor, 0.5f).setOnComplete(() =>
+            {
+                LeanTween.color(gameObject, _disabledColor, 0.5f).setOnComplete(() =>
+                {
+                    _state = State.NonPressed;
+                });
+            });
+            /*
             LeanTween.value(0, 1, 0.5f).setOnComplete(() =>
             {
                 _state = State.NonPressed;
             });
+            */
         }
     }
 
