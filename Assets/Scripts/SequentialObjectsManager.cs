@@ -5,7 +5,7 @@ using UnityEngine;
 public class SequentialObjectsManager : PuzzleManager
 {
     [SerializeField] private List<SequentialObject> _sequentialObjectsInCorrectOrder = new List<SequentialObject>();
-    private List<SequentialObject> _currentSequentialObjectsOrder = new List<SequentialObject>();
+    [SerializeField] private List<SequentialObject> _currentSequentialObjectsOrder = new List<SequentialObject>();
 
 
     public override void PuzzleCompleted()
