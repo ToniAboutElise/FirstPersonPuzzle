@@ -51,9 +51,9 @@ public class LocalizationManager : MonoBehaviour
 
         foreach(string keyString in _keys)
         {
-            if(targetKey == keyString.Split(',')[0])
+            if(targetKey == keyString.Split(';')[0])
             {
-                localizationKey.SetKeyText(keyString.Split(',')[(int)language + 1]);
+                localizationKey.SetKeyText(keyString.Split(';')[(int)language + 1]);
                 return;
             }
             else

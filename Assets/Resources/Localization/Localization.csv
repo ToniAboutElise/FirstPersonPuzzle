@@ -1,3 +1,4 @@
-Key,English,Spanish,Catalan
-hello,Hello,Hola,Hola
-goodbye,Goodbye,Adiós,Adéu
+Key;English;Spanish;Català
+hello;Hello;Hola;Hola
+goodbye;Goodbye;Adiós;Adéu
+letterIntro;NULL;Querida hija: Sé que han pasado 12 años desde mi desaparición y probablemente no quieras saber nada de mi. Aun así, debo decirte la verdad, la razón por la que os abandoné a tu madre y a ti. Como sabes, mis viajes por trabajo eran frecuentes, yendo a lugares del mundo muy alejados entre sí.  La realidad es que me hallaba en una búsqueda mayor de lo que cualquiera pueda imaginar. Nadie en este mundo sería siquiera capaz de entender como estoy pudiendo enviar esta carta. Ven a por mí, eres mi última esperanza. Y también la de este mundo. En estas coordenadas encontrarás un cortijo con paredes de piedra: 57.1925302, -3.8285377,10.46. Te quiero, papá.;NULL;
