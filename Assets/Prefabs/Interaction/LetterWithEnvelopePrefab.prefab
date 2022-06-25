@@ -323,7 +323,12 @@ MonoBehaviour:
   _animator: {fileID: 0}
   _animationClip: {fileID: 0}
   _animatorKey: 
-  _nextInteractableWithinLookableObject: {fileID: 0}
+  _interactableObjectsToDisable: []
+  _targetGameObjectToSet: {fileID: 0}
+  _setPosition: 0
+  _setRotation: 0
+  _targetPosition: {x: 0, y: 0, z: 0}
+  _targetRotation: {x: 0, y: 0, z: 0}
 --- !u!1 &1032865300417905559
 GameObject:
   m_ObjectHideFlags: 0
@@ -437,7 +442,13 @@ MonoBehaviour:
   _animator: {fileID: 2901897680199666987}
   _animationClip: {fileID: 7400000, guid: 7f660466db5fddd49a9dac0fc17edd81, type: 2}
   _animatorKey: Open
-  _nextInteractableWithinLookableObject: {fileID: 8574680199574579995}
+  _interactableObjectsToDisable:
+  - {fileID: 1381255265}
+  _targetGameObjectToSet: {fileID: 1921617204831583135}
+  _setPosition: 0
+  _setRotation: 1
+  _targetPosition: {x: 0, y: 0, z: 0}
+  _targetRotation: {x: 180, y: 0, z: 0}
 --- !u!1 &1921617204831583135
 GameObject:
   m_ObjectHideFlags: 0
