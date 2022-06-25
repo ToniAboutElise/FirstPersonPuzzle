@@ -45,11 +45,14 @@ public class AnimationPlayInteractableWithinLookableObject : InteractableWithinL
             interactableObject.enabled = false;
         }
         LeanTween.value(0, 1, _animationClip.length - 0.2f).setOnComplete(() =>
-          {
-          LeanTween.value(0, 1, 0.8f).setOnUpdate((float value)=>
-          {
-              _textToEnable.color = new Color(_textToEnable.color.r, _textToEnable.color.g, _textToEnable.color.b, value);
-          });
+        {
+            if (_enableText) 
+            { 
+                LeanTween.value(0, 1, 0.8f).setOnUpdate((float value)=>
+                {
+                    _textToEnable.color = new Color(_textToEnable.color.r, _textToEnable.color.g, _textToEnable.color.b, value);
+                });
+            }
             gameObject.SetActive(false);
         });
     }
