@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class AnimationPlayInteractableWithinLookableObject : InteractableWithinLookableObject
@@ -9,8 +10,10 @@ public class AnimationPlayInteractableWithinLookableObject : InteractableWithinL
     [SerializeField] private string _animatorKey;
     [SerializeField] private List<InteractableObject> _interactableObjectsToDisable = new List<InteractableObject>();
     [SerializeField] private GameObject _targetGameObjectToSet;
+    [SerializeField] private TMP_Text _textToEnable;
     [SerializeField] private bool _setPosition;
     [SerializeField] private bool _setRotation;
+    [SerializeField] private bool _enableText;
     [SerializeField] private Vector3 _targetPosition;
     [SerializeField] private Vector3 _targetRotation;
 
@@ -41,8 +44,12 @@ public class AnimationPlayInteractableWithinLookableObject : InteractableWithinL
         {
             interactableObject.enabled = false;
         }
-        LeanTween.value(0, 1, _animationClip.length).setOnComplete(() =>
-        {
+        LeanTween.value(0, 1, _animationClip.length - 0.2f).setOnComplete(() =>
+          {
+          LeanTween.value(0, 1, 0.8f).setOnUpdate((float value)=>
+          {
+              _textToEnable.color = new Color(_textToEnable.color.r, _textToEnable.color.g, _textToEnable.color.b, value);
+          });
             gameObject.SetActive(false);
         });
     }
