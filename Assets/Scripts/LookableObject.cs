@@ -5,10 +5,10 @@ using UnityEngine.Rendering.Universal;
 
 public class LookableObject : InteractableObject
 {
-    [SerializeField] private Transform _originalTransform;
+    public Transform _originalTransform;
     private DepthOfField _depthOfField;
-    private float _clampedYInput = 0;
-    private float _clampedXInput = 0;
+    protected float _clampedYInput = 0;
+    protected float _clampedXInput = 0;
     public override void StartInteracting()
     {
         base.StartInteracting();

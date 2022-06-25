@@ -36,6 +36,7 @@ public class PlayerRaycast : MonoBehaviour
         }
         else
         {
+            _raycastColor = Color.gray;
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 1, _raycastColor);
             UIManager.instance.SetInteractiveImageActive(false);
         }
