@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 526168864}
   - component: {fileID: 526168863}
   - component: {fileID: 526168862}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: LetterCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49,7 +49,7 @@ Canvas:
   m_GameObject: {fileID: 526168861}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -73,7 +73,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 2
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -113,7 +113,7 @@ GameObject:
   - component: {fileID: 2061883193}
   - component: {fileID: 2061883192}
   - component: {fileID: 529047036015639164}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -202,7 +202,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 42.1
+  m_fontSize: 24.9
   m_fontSizeBase: 60.17
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -238,7 +238,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -594.6478, y: -356.6036, z: 4.7449036, w: -260.4846}
+  m_margin: {x: -274.2924, y: -173.36523, z: 4.7449036, w: -139.59099}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -710,6 +710,7 @@ MonoBehaviour:
   _enableText: 1
   _targetPosition: {x: 0, y: 0, z: 0}
   _targetRotation: {x: 180, y: 0, z: 0}
+  _colorAdjustments: {fileID: 0}
   _uiButton: {fileID: 6073194314946206129}
 --- !u!1 &1921617204831583135
 GameObject:
@@ -917,6 +918,10 @@ PrefabInstance:
       value: UIButton
       objectReference: {fileID: 0}
     - target: {fileID: 1352548796840226449, guid: c0bfd17039385d14a837af87eeb6393f, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1352548796840226449, guid: c0bfd17039385d14a837af87eeb6393f, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -932,6 +937,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 579420034844054956}
+    - target: {fileID: 3174219249711407359, guid: c0bfd17039385d14a837af87eeb6393f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Next
+      objectReference: {fileID: 0}
     - target: {fileID: 3231473562439376212, guid: c0bfd17039385d14a837af87eeb6393f, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -942,7 +951,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3231473562439376212, guid: c0bfd17039385d14a837af87eeb6393f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -285
+      value: -140
       objectReference: {fileID: 0}
     - target: {fileID: 3231473562439376212, guid: c0bfd17039385d14a837af87eeb6393f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -977,8 +986,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3584976740687817664, guid: c0bfd17039385d14a837af87eeb6393f, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3584976740687817664, guid: c0bfd17039385d14a837af87eeb6393f, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6707923888847472028, guid: c0bfd17039385d14a837af87eeb6393f, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6707923888847472028, guid: c0bfd17039385d14a837af87eeb6393f, type: 3}
       propertyPath: m_IsActive

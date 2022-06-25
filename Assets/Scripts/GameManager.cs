@@ -8,8 +8,10 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
     private EventSystem _eventSystem;
+    private PostProcessingManager _postProcessingManager;
 
     public EventSystem GetEventSystem() { return _eventSystem; }
+    public PostProcessingManager GetPostProcessingManager() { return _postProcessingManager; }
 
     private void Awake()
     {
@@ -27,5 +29,8 @@ public class GameManager : MonoBehaviour
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         _eventSystem = FindObjectOfType<EventSystem>();
+        _postProcessingManager = FindObjectOfType<PostProcessingManager>();
+
+        _postProcessingManager.Fade(PostProcessingManager.FadeType.FADE_IN, 4);
     }
 }

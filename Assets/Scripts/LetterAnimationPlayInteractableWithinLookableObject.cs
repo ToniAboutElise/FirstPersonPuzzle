@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.UI;
 
@@ -22,19 +23,13 @@ public class LetterAnimationPlayInteractableWithinLookableObject : AnimationPlay
         });
     }
 
-    public void Test()
+    public void Next()
     {
-        if (Player.instance.GetVolume().profile.TryGet<ColorAdjustments>(out _colorAdjustments))
+        _uiButton.GetButton().interactable = false;
+        PostProcessingManager.instance.Fade(PostProcessingManager.FadeType.FADE_OUT);
+        LeanTween.value(0, 1, 8).setOnComplete(() =>
         {
-            _colorAdjustments.active = true;
-            LeanTween.value(0, -30, 8).setOnUpdate((float value) =>
-            {
-                _colorAdjustments.postExposure.value = value;
-                if(value == -30)
-                {
-                    GameManager.instance.LoadScene("Demo");
-                }
-            });
-        }
+            SceneManager.LoadSceneAsync("Demo", LoadSceneMode.Single);
+        });
     }
 }
