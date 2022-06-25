@@ -33,6 +33,10 @@ public class PlayerRaycast : MonoBehaviour
                     UIManager.instance.SetInteractiveImageActive(false);
                 }
             }
+            else
+            {
+                UIManager.instance.SetInteractiveImageActive(false);
+            }
         }
         else
         {
