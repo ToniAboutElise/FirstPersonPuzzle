@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public GameManager instance;
+    public static GameManager instance;
     private EventSystem _eventSystem;
 
     public EventSystem GetEventSystem() { return _eventSystem; }
