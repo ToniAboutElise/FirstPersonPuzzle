@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LetterIntro.unity
     guid: 8676b88590309134abb4d45c8bda82a7
-  - enabled: 0
+  - enabled: 1
     path: Assets/3dizart Classic Furniture Pack/Demo/Demo.unity
     guid: 2b5c393056aaeec46973d4344275ca05
   m_configObjects:

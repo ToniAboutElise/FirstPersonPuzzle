@@ -19,9 +19,13 @@ public class GameManager : MonoBehaviour
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
+    public void LoadScene(string scene)
+    {
+        SceneManager.LoadScene(scene, LoadSceneMode.Single);
+    }
+
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         _eventSystem = FindObjectOfType<EventSystem>();
     }
-
 }

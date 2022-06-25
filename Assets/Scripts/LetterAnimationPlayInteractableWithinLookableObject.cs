@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 using UnityEngine.UI;
 
 public class LetterAnimationPlayInteractableWithinLookableObject : AnimationPlayInteractableWithinLookableObject
 {
+    [SerializeField] private ColorAdjustments _colorAdjustments;
     [SerializeField] private UIButton _uiButton;
     public override void ActionOnInteract()
     {
@@ -22,6 +24,17 @@ public class LetterAnimationPlayInteractableWithinLookableObject : AnimationPlay
 
     public void Test()
     {
-        Debug.Log("YES");
+        if (Player.instance.GetVolume().profile.TryGet<ColorAdjustments>(out _colorAdjustments))
+        {
+            _colorAdjustments.active = true;
+            LeanTween.value(0, -30, 8).setOnUpdate((float value) =>
+            {
+                _colorAdjustments.postExposure.value = value;
+                if(value == -30)
+                {
+                    GameManager.instance.LoadScene("Demo");
+                }
+            });
+        }
     }
 }
