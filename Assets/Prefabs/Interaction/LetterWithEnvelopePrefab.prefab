@@ -916,6 +916,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: UIButton
       objectReference: {fileID: 0}
+    - target: {fileID: 1352548796840226449, guid: c0bfd17039385d14a837af87eeb6393f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1495380314621111007, guid: c0bfd17039385d14a837af87eeb6393f, type: 3}
+      propertyPath: m_fontColor.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1495380314621111007, guid: c0bfd17039385d14a837af87eeb6393f, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 16777215
+      objectReference: {fileID: 0}
     - target: {fileID: 3174219249711407359, guid: c0bfd17039385d14a837af87eeb6393f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -963,6 +975,14 @@ PrefabInstance:
     - target: {fileID: 3231473562439376212, guid: c0bfd17039385d14a837af87eeb6393f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3584976740687817664, guid: c0bfd17039385d14a837af87eeb6393f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6707923888847472028, guid: c0bfd17039385d14a837af87eeb6393f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0bfd17039385d14a837af87eeb6393f, type: 3}

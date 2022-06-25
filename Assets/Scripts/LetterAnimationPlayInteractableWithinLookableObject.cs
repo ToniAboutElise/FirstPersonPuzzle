@@ -11,12 +11,11 @@ public class LetterAnimationPlayInteractableWithinLookableObject : AnimationPlay
         base.ActionOnInteract();
         LeanTween.value(0, 1, 10).setOnComplete(() => 
         {
-            _uiButton.gameObject.SetActive(true);
-
             LeanTween.value(0, 1, 2).setOnUpdate((float value) =>
             {
                 _uiButton.GetText().color = new Color(_uiButton.GetText().color.r, _uiButton.GetText().color.g, _uiButton.GetText().color.b, value);
             });
+            _uiButton.GetButton().gameObject.SetActive(true);
             _uiButton.GetButton().GetComponent<Button>().Select();
         });
     }
