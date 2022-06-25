@@ -10,7 +10,7 @@ public class LocalizationKey : MonoBehaviour
     private TMP_Text _keyText;
 
     public string GetKey() { return _key; }
-    public void SetKeyText(string keyText) { _keyText.text = keyText; _keyText.text = _keyText.text.Replace("$$", "\n"); }
+    public void SetKeyText(string keyText) { _keyText.text = keyText; _keyText.text = _keyText.text.Replace("**", "\n"); }
 
     private void Awake()
     {
