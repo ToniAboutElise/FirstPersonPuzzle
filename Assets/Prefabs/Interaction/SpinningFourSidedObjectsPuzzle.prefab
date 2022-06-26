@@ -199,6 +199,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 8fe8a3a5490d22640a719a5742e787ba, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1bbd6e178cebcbc4e884a07149e6c7d4, type: 2}
     - target: {fileID: 919132149155446097, guid: 8fe8a3a5490d22640a719a5742e787ba, type: 3}
       propertyPath: m_Name
       value: Puzzle4SidePiece (3)
@@ -241,10 +245,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interactableObject: {fileID: 9068304351277379909}
+  _axisToCheck: 0
   _degreesToRotateX: 0
   _degreesToRotateY: 0
   _degreesToRotateZ: 90
   _correctLocalEulerAngles: {x: 0, y: 0, z: 0}
+  currentEulerAngles: {x: 0, y: 0, z: 0}
+  _rotationStatus: 0
 --- !u!1001 &8149403246649095983
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -308,6 +315,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 8fe8a3a5490d22640a719a5742e787ba, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1bbd6e178cebcbc4e884a07149e6c7d4, type: 2}
     - target: {fileID: 919132149155446097, guid: 8fe8a3a5490d22640a719a5742e787ba, type: 3}
       propertyPath: m_Name
       value: Puzzle4SidePiece (7)
@@ -350,10 +361,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interactableObject: {fileID: 9068304350050388606}
+  _axisToCheck: 0
   _degreesToRotateX: 0
   _degreesToRotateY: 0
   _degreesToRotateZ: 90
   _correctLocalEulerAngles: {x: 0, y: 0, z: 0}
+  currentEulerAngles: {x: 0, y: 0, z: 0}
+  _rotationStatus: 0
 --- !u!1001 &8149403246691815818
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -417,6 +431,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 8fe8a3a5490d22640a719a5742e787ba, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1bbd6e178cebcbc4e884a07149e6c7d4, type: 2}
     - target: {fileID: 919132149155446097, guid: 8fe8a3a5490d22640a719a5742e787ba, type: 3}
       propertyPath: m_Name
       value: Puzzle4SidePiece (4)
@@ -459,10 +477,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interactableObject: {fileID: 9068304350227868891}
+  _axisToCheck: 0
   _degreesToRotateX: 0
   _degreesToRotateY: 0
   _degreesToRotateZ: 90
   _correctLocalEulerAngles: {x: 0, y: 0, z: 0}
+  currentEulerAngles: {x: 0, y: 0, z: 0}
+  _rotationStatus: 0
 --- !u!1001 &8149403246847992115
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -526,6 +547,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 8fe8a3a5490d22640a719a5742e787ba, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1bbd6e178cebcbc4e884a07149e6c7d4, type: 2}
     - target: {fileID: 919132149155446097, guid: 8fe8a3a5490d22640a719a5742e787ba, type: 3}
       propertyPath: m_Name
       value: Puzzle4SidePiece
@@ -568,10 +593,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interactableObject: {fileID: 9068304350384168034}
+  _axisToCheck: 0
   _degreesToRotateX: 0
   _degreesToRotateY: 0
   _degreesToRotateZ: 90
   _correctLocalEulerAngles: {x: 0, y: 0, z: 0}
+  currentEulerAngles: {x: 0, y: 0, z: 0}
+  _rotationStatus: 0
 --- !u!1001 &8149403246873829865
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -635,6 +663,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 8fe8a3a5490d22640a719a5742e787ba, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1bbd6e178cebcbc4e884a07149e6c7d4, type: 2}
     - target: {fileID: 919132149155446097, guid: 8fe8a3a5490d22640a719a5742e787ba, type: 3}
       propertyPath: m_Name
       value: Puzzle4SidePiece (2)
@@ -677,10 +709,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interactableObject: {fileID: 9068304350276312248}
+  _axisToCheck: 0
   _degreesToRotateX: 0
   _degreesToRotateY: 0
   _degreesToRotateZ: 90
   _correctLocalEulerAngles: {x: 0, y: 0, z: 0}
+  currentEulerAngles: {x: 0, y: 0, z: 0}
+  _rotationStatus: 0
 --- !u!1001 &8149403247045838696
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -744,6 +779,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 8fe8a3a5490d22640a719a5742e787ba, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1bbd6e178cebcbc4e884a07149e6c7d4, type: 2}
     - target: {fileID: 919132149155446097, guid: 8fe8a3a5490d22640a719a5742e787ba, type: 3}
       propertyPath: m_Name
       value: Puzzle4SidePiece (5)
@@ -786,10 +825,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interactableObject: {fileID: 9068304349374462521}
+  _axisToCheck: 0
   _degreesToRotateX: 0
   _degreesToRotateY: 0
   _degreesToRotateZ: 90
   _correctLocalEulerAngles: {x: 0, y: 0, z: 0}
+  currentEulerAngles: {x: 0, y: 0, z: 0}
+  _rotationStatus: 0
 --- !u!1001 &8149403247067282847
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -853,6 +895,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 8fe8a3a5490d22640a719a5742e787ba, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1bbd6e178cebcbc4e884a07149e6c7d4, type: 2}
     - target: {fileID: 919132149155446097, guid: 8fe8a3a5490d22640a719a5742e787ba, type: 3}
       propertyPath: m_Name
       value: Puzzle4SidePiece (1)
@@ -895,10 +941,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interactableObject: {fileID: 9068304349529178318}
+  _axisToCheck: 0
   _degreesToRotateX: 0
   _degreesToRotateY: 0
   _degreesToRotateZ: 90
   _correctLocalEulerAngles: {x: 0, y: 0, z: 0}
+  currentEulerAngles: {x: 0, y: 0, z: 0}
+  _rotationStatus: 0
 --- !u!1001 &8149403247331220367
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -962,6 +1011,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 8fe8a3a5490d22640a719a5742e787ba, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1bbd6e178cebcbc4e884a07149e6c7d4, type: 2}
     - target: {fileID: 919132149155446097, guid: 8fe8a3a5490d22640a719a5742e787ba, type: 3}
       propertyPath: m_Name
       value: Puzzle4SidePiece (6)
@@ -1004,7 +1057,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interactableObject: {fileID: 9068304349794051806}
+  _axisToCheck: 0
   _degreesToRotateX: 0
   _degreesToRotateY: 0
   _degreesToRotateZ: 90
   _correctLocalEulerAngles: {x: 0, y: 0, z: 0}
+  currentEulerAngles: {x: 0, y: 0, z: 0}
+  _rotationStatus: 0
