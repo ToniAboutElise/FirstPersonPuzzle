@@ -12920,10 +12920,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1953371551356417725, guid: 68d57fa7375ef7940a0f81966fe000a3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1953371551356417726, guid: 68d57fa7375ef7940a0f81966fe000a3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 585bcb14bd77a8c4eb52e1bcfcbf53f1, type: 2}
+    - target: {fileID: 1953371551419767382, guid: 68d57fa7375ef7940a0f81966fe000a3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1953371551419767383, guid: 68d57fa7375ef7940a0f81966fe000a3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -12932,10 +12940,18 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 585bcb14bd77a8c4eb52e1bcfcbf53f1, type: 2}
+    - target: {fileID: 1953371552810899871, guid: 68d57fa7375ef7940a0f81966fe000a3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2104648650338467801, guid: 68d57fa7375ef7940a0f81966fe000a3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 585bcb14bd77a8c4eb52e1bcfcbf53f1, type: 2}
+    - target: {fileID: 2308422998652506269, guid: 68d57fa7375ef7940a0f81966fe000a3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5213974206859754405, guid: 68d57fa7375ef7940a0f81966fe000a3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -12984,6 +13000,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6821614585216447515, guid: 68d57fa7375ef7940a0f81966fe000a3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7191005523724837508, guid: 68d57fa7375ef7940a0f81966fe000a3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -12991,6 +13011,10 @@ PrefabInstance:
     - target: {fileID: 7243133711228998610, guid: 68d57fa7375ef7940a0f81966fe000a3, type: 3}
       propertyPath: m_Name
       value: RotatoryRecipientsKeyPuzzle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7775493803868069608, guid: 68d57fa7375ef7940a0f81966fe000a3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68d57fa7375ef7940a0f81966fe000a3, type: 3}
