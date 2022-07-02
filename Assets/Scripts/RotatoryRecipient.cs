@@ -8,7 +8,7 @@ public class RotatoryRecipient : MonoBehaviour
     [SerializeField] private GameObject _horizontalRotator;
     [SerializeField] private Vector3 targetVertical;
     [SerializeField] private Vector3 targetHorizontal;
-    private RotatoryRecipientState _rotatoryRecipientState = RotatoryRecipientState.INCORRECT;
+    public RotatoryRecipientState _rotatoryRecipientState = RotatoryRecipientState.INCORRECT;
     public enum RotatoryRecipientState
     {
         INCORRECT,
@@ -27,7 +27,7 @@ public class RotatoryRecipient : MonoBehaviour
 
     public void CheckRotation()
     {
-        if (_verticalRotator.transform.localEulerAngles == targetVertical && _horizontalRotator.transform.localEulerAngles == targetHorizontal)
+        if ((int)_verticalRotator.transform.localEulerAngles.y == (int)targetVertical.y && (int)_horizontalRotator.transform.localEulerAngles.y == (int)targetHorizontal.y)
         {
             SetCorrect();
         }

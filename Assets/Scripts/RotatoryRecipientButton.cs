@@ -28,7 +28,7 @@ public class RotatoryRecipientButton : InteractableObject
             switch (_rotationType)
             {
                 case RotationType.VERTICAL:
-                    LeanTween.rotateAround(_rotatoryRecipient.GetVerticalRotator(), new Vector3(0,1,0), 90, 2).setOnComplete(() =>
+                    LeanTween.rotateAroundLocal(_rotatoryRecipient.GetVerticalRotator(), new Vector3(1,0,0), 90, 2).setOnComplete(() =>
                     {
                         _rotatoryRecipient.CheckRotation();
                         _state = State.NON_PRESSED;
