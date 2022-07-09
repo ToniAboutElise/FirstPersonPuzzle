@@ -11,8 +11,8 @@ public class RubickettePuzzleManager : PuzzleManager
         foreach (RubickettePuzzlePiece rubickettePuzzlePiece in _rubickettePuzzlePieces)
         {
             rubickettePuzzlePiece.onSetCorrect += CheckAllRecipientState;
-            _rubicketteRotationSetterButton.onPress += ChangeRotation;
         }
+        _rubicketteRotationSetterButton.onPress += ChangeRotation;
     }
 
     public override void PuzzleCompleted()
@@ -20,18 +20,26 @@ public class RubickettePuzzleManager : PuzzleManager
         foreach (RubickettePuzzlePiece rubickettePuzzlePiece in _rubickettePuzzlePieces)
         {
             rubickettePuzzlePiece.onSetCorrect -= CheckAllRecipientState;
-            _rubicketteRotationSetterButton.onPress -= ChangeRotation;
         }
+        _rubicketteRotationSetterButton.onPress -= ChangeRotation;
     }
 
     private void ChangeRotation()
     {
         foreach (RubickettePuzzlePiece rubickettePuzzlePiece in _rubickettePuzzlePieces)
         {
-            if (rubickettePuzzlePiece.GetRotationType() == RubickettePuzzlePiece.RotationType.HORIZONTAL)
-                rubickettePuzzlePiece.SetRotationType(RubickettePuzzlePiece.RotationType.VERTICAL);
-            else
-                rubickettePuzzlePiece.SetRotationType(RubickettePuzzlePiece.RotationType.HORIZONTAL);
+            switch (rubickettePuzzlePiece.GetRotationType())
+            {
+                case RubickettePuzzlePiece.RotationType.X:
+                    rubickettePuzzlePiece.SetRotationType(RubickettePuzzlePiece.RotationType.Z);
+                    break;
+                case RubickettePuzzlePiece.RotationType.Z:
+                    rubickettePuzzlePiece.SetRotationType(RubickettePuzzlePiece.RotationType.Y);
+                    break;
+                case RubickettePuzzlePiece.RotationType.Y:
+                    rubickettePuzzlePiece.SetRotationType(RubickettePuzzlePiece.RotationType.X);
+                    break;
+            }
         }
     }
 

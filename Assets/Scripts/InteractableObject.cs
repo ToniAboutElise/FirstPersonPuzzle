@@ -6,11 +6,21 @@ using UnityEngine;
 public class InteractableObject : MonoBehaviour
 {
     public GameObject _interactableObject;
+
+    protected InteractableState _interactableState = InteractableState.INTERACTABLE;
+    public enum InteractableState
+    {
+        INTERACTABLE,
+        NON_INTERACTABLE,
+    }
     public virtual void StartInteracting()
     {
-        FirstPersonController.instance.SetCanMoveAndJump(false);
-        Player.instance.SetInteractionStatus(Player.InteractionStatus.INTERACTING);
-        Player.instance.SetCurrentInteractableObject(this);
+        if(_interactableState == InteractableState.INTERACTABLE) 
+        { 
+            FirstPersonController.instance.SetCanMoveAndJump(false);
+            Player.instance.SetInteractionStatus(Player.InteractionStatus.INTERACTING);
+            Player.instance.SetCurrentInteractableObject(this);
+        }
     }
 
     public virtual void StopInteracting()

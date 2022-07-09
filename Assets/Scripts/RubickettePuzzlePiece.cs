@@ -17,8 +17,9 @@ public class RubickettePuzzlePiece : InteractableObject
     [SerializeField] private RotationType _rotationType;
     public enum RotationType
     {
-        VERTICAL,
-        HORIZONTAL,
+        X,
+        Y,
+        Z,
     }
 
     private State _state = State.NON_PRESSED;
@@ -42,15 +43,22 @@ public class RubickettePuzzlePiece : InteractableObject
             _state = State.PRESSED;
             switch (_rotationType)
             {
-                case RotationType.VERTICAL:
-                    LeanTween.rotateAround(gameObject, new Vector3(0, 0, 1), 90, 2).setOnComplete(() =>
+                case RotationType.X:
+                    LeanTween.rotateAround(gameObject, new Vector3(0, 0, 1), 90, 1).setOnComplete(() =>
                     {
                         //_rotatoryRecipient.CheckRotation();
                         _state = State.NON_PRESSED;
                     });
                     break;
-                case RotationType.HORIZONTAL:
-                    LeanTween.rotateAround(gameObject, new Vector3(0, 1, 0), 90, 2).setOnComplete(() =>
+                case RotationType.Y:
+                    LeanTween.rotateAround(gameObject, new Vector3(0, -1, 0), 90, 1).setOnComplete(() =>
+                    {
+                        //_rotatoryRecipient.CheckRotation();
+                        _state = State.NON_PRESSED;
+                    });
+                    break;
+                case RotationType.Z:
+                    LeanTween.rotateAround(gameObject, new Vector3(-1, 0, 0), 90, 1).setOnComplete(() =>
                     {
                         //_rotatoryRecipient.CheckRotation();
                         _state = State.NON_PRESSED;

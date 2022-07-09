@@ -9,9 +9,23 @@ public class RubicketteRotationSetterButton : InteractableObject
 
     public override void StartInteracting()
     {
-        LeanTween.rotateAroundLocal(gameObject, new Vector3(0, 0, 1), 90, 2).setOnComplete(() =>
+        if(_interactableState == InteractableState.INTERACTABLE) 
         {
-            onPress.Invoke();
-        });
+            _interactableState = InteractableState.NON_INTERACTABLE;
+            int targetRotation;
+            if(transform.eulerAngles.z > 45)
+            {
+                targetRotation = -90;
+            }
+            else
+            {
+                targetRotation = 45;
+            }
+            LeanTween.rotateAroundLocal(gameObject, new Vector3(0, 0, 1), targetRotation, 1).setOnComplete(() =>
+            {
+                onPress.Invoke();
+                _interactableState = InteractableState.INTERACTABLE;
+            });
+        }
     }
 }
