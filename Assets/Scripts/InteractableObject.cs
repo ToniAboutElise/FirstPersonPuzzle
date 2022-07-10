@@ -5,13 +5,25 @@ using UnityEngine;
 
 public class InteractableObject : MonoBehaviour
 {
-    public GameObject _interactableObject;
+    [Header("Leave Interactable object null if you want it to be this GameObject")]
+    [SerializeField] protected GameObject _interactableObject;
+    private Collider _collider;
+
+    public Collider GetCollider() { return _collider; }
 
     protected InteractableState _interactableState = InteractableState.INTERACTABLE;
     public enum InteractableState
     {
         INTERACTABLE,
         NON_INTERACTABLE,
+    }
+
+    private void Awake()
+    {
+        if(_interactableObject == null)
+        _interactableObject = gameObject;
+
+        _collider = GetComponent<Collider>();
     }
     public virtual void StartInteracting()
     {

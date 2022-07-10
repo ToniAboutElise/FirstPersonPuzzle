@@ -17,11 +17,15 @@ public class RubickettePuzzleManager : PuzzleManager
 
     public override void PuzzleCompleted()
     {
+        base.PuzzleCompleted();
+
         foreach (RubickettePuzzlePiece rubickettePuzzlePiece in _rubickettePuzzlePieces)
         {
             rubickettePuzzlePiece.onSetCorrect -= CheckAllRecipientState;
+            rubickettePuzzlePiece.GetCollider().enabled = false;
         }
         _rubicketteRotationSetterButton.onPress -= ChangeRotation;
+        _rubicketteRotationSetterButton.GetCollider().enabled = false;
     }
 
     private void ChangeRotation()

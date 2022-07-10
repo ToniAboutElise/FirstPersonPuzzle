@@ -5,6 +5,7 @@ using UnityEngine;
 public class RotatoryRecipientPuzzleManager : PuzzleManager
 {
     [SerializeField] private List<RotatoryRecipient> _rotatoryRecipients = new List<RotatoryRecipient>();
+    [SerializeField] private List<RotatoryRecipientButton> _rotatoryRecipientButtons = new List<RotatoryRecipientButton>();
     private void Start()
     {
         foreach(RotatoryRecipient rotatoryRecipient in _rotatoryRecipients)
@@ -15,9 +16,11 @@ public class RotatoryRecipientPuzzleManager : PuzzleManager
 
     public override void PuzzleCompleted()
     {
-        foreach (RotatoryRecipient rotatoryRecipient in _rotatoryRecipients)
+        base.PuzzleCompleted();
+
+        foreach (RotatoryRecipientButton rotatoryRecipientButton in _rotatoryRecipientButtons)
         {
-            rotatoryRecipient.onSetCorrect -= CheckAllRecipientState;
+            rotatoryRecipientButton.GetCollider().enabled = false;
         }
     }
 

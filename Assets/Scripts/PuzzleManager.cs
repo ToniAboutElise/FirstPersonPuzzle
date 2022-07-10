@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PuzzleManager : MonoBehaviour
 {
+    [SerializeField] private List<GameObject> _gameObjectsToActivateWhenSolved = new List<GameObject>();
+    [SerializeField] private List<GameObject> _gameObjectsToDeactivateWhenSolved = new List<GameObject>();
     private PuzzleState puzzleState = PuzzleState.NON_COMPLETED;
     private enum PuzzleState
     {
@@ -11,5 +13,29 @@ public class PuzzleManager : MonoBehaviour
         COMPLETED,
     }
 
-    public virtual void PuzzleCompleted() { }
+    private void Awake()
+    {
+        foreach (GameObject gameObject in _gameObjectsToActivateWhenSolved)
+        {
+            gameObject.SetActive(false);
+        }
+
+        foreach (GameObject gameObject in _gameObjectsToDeactivateWhenSolved)
+        {
+            gameObject.SetActive(true);
+        }
+    }
+
+    public virtual void PuzzleCompleted() 
+    {
+        foreach(GameObject gameObject in _gameObjectsToActivateWhenSolved)
+        {
+            gameObject.SetActive(true);
+        }
+
+        foreach (GameObject gameObject in _gameObjectsToDeactivateWhenSolved)
+        {
+            gameObject.SetActive(false);
+        }
+    }
 }

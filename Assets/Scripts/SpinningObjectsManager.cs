@@ -21,6 +21,9 @@ public class SpinningObjectsManager : PuzzleManager
     public override void PuzzleCompleted()
     {
         base.PuzzleCompleted();
-        Debug.Log("Completed");
+        foreach (SpinningObject spinningObject in _spinningObjects)
+        {
+            spinningObject.GetCollider().enabled = false;
+        }
     }
 }

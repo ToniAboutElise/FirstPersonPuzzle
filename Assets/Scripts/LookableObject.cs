@@ -5,7 +5,7 @@ using UnityEngine.Rendering.Universal;
 
 public class LookableObject : InteractableObject
 {
-    public Transform _originalTransform;
+    [SerializeField] private Transform _originalTransform;
     private DepthOfField _depthOfField;
     protected float _clampedYInput = 0;
     protected float _clampedXInput = 0;

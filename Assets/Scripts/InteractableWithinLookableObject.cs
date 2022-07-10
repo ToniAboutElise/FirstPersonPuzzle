@@ -5,10 +5,6 @@ using UnityEngine;
 
 public class InteractableWithinLookableObject : InteractableObject
 {
-    [SerializeField] private Collider _collider;
-
-    public Collider GetCollider() { return _collider; }
-
     public override void StartInteracting()
     {
         FirstPersonController.instance.SetCanMoveAndJump(false);

@@ -21,9 +21,9 @@ public class RubicketteRotationSetterButton : InteractableObject
             {
                 targetRotation = 45;
             }
-            LeanTween.rotateAroundLocal(gameObject, new Vector3(0, 0, 1), targetRotation, 1).setOnComplete(() =>
+            onPress.Invoke();
+            LeanTween.rotateAroundLocal(gameObject, new Vector3(0, 0, 0.7f), targetRotation, 1).setOnComplete(() =>
             {
-                onPress.Invoke();
                 _interactableState = InteractableState.INTERACTABLE;
             });
         }

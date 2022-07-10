@@ -18,7 +18,10 @@ public class SequentialObjectsManager : PuzzleManager
     public override void PuzzleCompleted()
     {
         base.PuzzleCompleted();
-        Debug.Log("Completed");
+        foreach (SequentialObject sequentialObject in _currentSequentialObjectsOrder)
+        {
+            sequentialObject.GetCollider().enabled = false;
+        }
     }
 
     private void ResetPuzzle()
