@@ -6,6 +6,7 @@ public class PuzzleManager : MonoBehaviour
 {
     [SerializeField] private List<GameObject> _gameObjectsToActivateWhenSolved = new List<GameObject>();
     [SerializeField] private List<GameObject> _gameObjectsToDeactivateWhenSolved = new List<GameObject>();
+    [SerializeField] private List<PuzzleSolvedConsequence> _puzzleSolvedConsequences = new List<PuzzleSolvedConsequence>();
     private PuzzleState puzzleState = PuzzleState.NON_COMPLETED;
     private enum PuzzleState
     {
@@ -36,6 +37,11 @@ public class PuzzleManager : MonoBehaviour
         foreach (GameObject gameObject in _gameObjectsToDeactivateWhenSolved)
         {
             gameObject.SetActive(false);
+        }
+
+        foreach(PuzzleSolvedConsequence puzzleSolvedConsequence in _puzzleSolvedConsequences)
+        {
+            puzzleSolvedConsequence.InvokeConsequence();
         }
     }
 }
