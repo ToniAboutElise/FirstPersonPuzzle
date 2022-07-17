@@ -11681,7 +11681,7 @@ BoxCollider:
   m_GameObject: {fileID: 1805333201}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1.3610295, y: 0.6830589, z: 0.601238}
   m_Center: {x: 0.00000011920932, y: 0.34152934, z: 0}
@@ -12453,6 +12453,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b02f4afe9bd79d46af7cd614207d7f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _interactableObject: {fileID: 0}
   _renderer: {fileID: 1917036160}
   _collider: {fileID: 1917036159}
 --- !u!4 &1935186767 stripped
@@ -14945,7 +14946,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8255793469531879207, guid: bbcbb8d3d17703f45829d80472af5bc2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -15.07
+      value: -14.99
       objectReference: {fileID: 0}
     - target: {fileID: 8255793469531879207, guid: bbcbb8d3d17703f45829d80472af5bc2, type: 3}
       propertyPath: m_LocalRotation.w

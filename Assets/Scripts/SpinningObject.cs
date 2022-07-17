@@ -51,6 +51,8 @@ public class SpinningObject : InteractableObject
 
     private void CheckRotationStatus()
     {
+        currentEulerAngles = transform.localEulerAngles;
+
         float _objectValue = -1;
         float _targetValue = -2;
         switch (_axisToCheck)
@@ -73,8 +75,10 @@ public class SpinningObject : InteractableObject
         if (_objectValue > 0 && _objectValue < 10)
         {
             _objectValue = 0;
-            Debug.Log(_objectValue + " " + _targetValue);
+            Debug.Log((int)_objectValue == (int)_targetValue);
         }
+
+        Debug.Log(_objectValue + " " + _targetValue);
 
         if ((int)_objectValue == (int)_targetValue)
         {
