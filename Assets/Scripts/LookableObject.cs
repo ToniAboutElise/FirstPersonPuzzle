@@ -9,6 +9,7 @@ public class LookableObject : InteractableObject
     private DepthOfField _depthOfField;
     protected float _clampedYInput = 0;
     protected float _clampedXInput = 0;
+    private const float _rotationSpeed = 60;
     public override void StartInteracting()
     {
         base.StartInteracting();
@@ -32,6 +33,7 @@ public class LookableObject : InteractableObject
         base.WhileInteracting();
         _clampedYInput = Mathf.Clamp(Player.instance.GetPlayerInputActions().Player.Move.ReadValue<Vector2>().y, -1, 1);
         _clampedXInput = Mathf.Clamp(Player.instance.GetPlayerInputActions().Player.Move.ReadValue<Vector2>().x, -1, 1);
-        _interactableObject.transform.RotateAround(_interactableObject.transform.parent.position, new Vector3(-_clampedYInput * 4, -_clampedXInput * 4, 0), 1);
+        _interactableObject.transform.Rotate(_interactableObject.transform.parent.up * (-_clampedXInput * _rotationSpeed * Time.deltaTime), Space.World);
+        _interactableObject.transform.Rotate(_interactableObject.transform.parent.transform.right * (_clampedYInput * _rotationSpeed * Time.deltaTime), Space.World);
     }
 }
