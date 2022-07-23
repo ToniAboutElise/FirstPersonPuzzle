@@ -36,6 +36,11 @@ public class RubickettePuzzlePiece : InteractableObject
     public RotationType GetRotationType() { return _rotationType; }
     public void SetRotationType(RotationType rotationType) { _rotationType = rotationType; }
 
+    private void Awake()
+    {
+        CheckRotation();
+    }
+
     public override void StartInteracting()
     {
         if (_state == State.NON_PRESSED)
@@ -46,21 +51,21 @@ public class RubickettePuzzlePiece : InteractableObject
                 case RotationType.X:
                     LeanTween.rotateAround(gameObject, -transform.parent.right, 90, 1).setOnComplete(() =>
                     {
-                        //_rotatoryRecipient.CheckRotation();
+                        CheckRotation();
                         _state = State.NON_PRESSED;
                     });
                     break;
                 case RotationType.Y:
                     LeanTween.rotateAround(gameObject, transform.parent.forward, 90, 1).setOnComplete(() =>
                     {
-                        //_rotatoryRecipient.CheckRotation();
+                        CheckRotation();
                         _state = State.NON_PRESSED;
                     });
                     break;
                 case RotationType.Z:
                     LeanTween.rotateAround(gameObject, transform.parent.up, 90, 1).setOnComplete(() =>
                     {
-                        //_rotatoryRecipient.CheckRotation();
+                        CheckRotation();
                         _state = State.NON_PRESSED;
                     });
                     break;
@@ -70,6 +75,7 @@ public class RubickettePuzzlePiece : InteractableObject
 
     public void CheckRotation()
     {
+        Debug.Log(transform.localEulerAngles);
         if ((int)transform.localEulerAngles.x == (int)_targetLocalEulerAngles.x && (int)transform.localEulerAngles.y == (int)_targetLocalEulerAngles.y && (int)transform.localEulerAngles.z == (int)_targetLocalEulerAngles.z)
         {
             SetCorrect();

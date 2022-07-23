@@ -25,6 +25,11 @@ public class RotatoryRecipient : MonoBehaviour
     public delegate void OnSetCorrect();
     public OnSetCorrect onSetCorrect;
 
+    private void Awake()
+    {
+        CheckRotation();
+    }
+
     public void CheckRotation()
     {
         if ((int)_verticalRotator.transform.localEulerAngles.y == (int)targetVertical.y && (int)_horizontalRotator.transform.localEulerAngles.y == (int)targetHorizontal.y)
