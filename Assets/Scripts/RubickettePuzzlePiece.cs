@@ -44,21 +44,21 @@ public class RubickettePuzzlePiece : InteractableObject
             switch (_rotationType)
             {
                 case RotationType.X:
-                    LeanTween.rotateAround(gameObject, new Vector3(0, 0, 1), 90, 1).setOnComplete(() =>
+                    LeanTween.rotateAround(gameObject, -transform.parent.right, 90, 1).setOnComplete(() =>
                     {
                         //_rotatoryRecipient.CheckRotation();
                         _state = State.NON_PRESSED;
                     });
                     break;
                 case RotationType.Y:
-                    LeanTween.rotateAround(gameObject, new Vector3(0, -1, 0), 90, 1).setOnComplete(() =>
+                    LeanTween.rotateAround(gameObject, transform.parent.forward, 90, 1).setOnComplete(() =>
                     {
                         //_rotatoryRecipient.CheckRotation();
                         _state = State.NON_PRESSED;
                     });
                     break;
                 case RotationType.Z:
-                    LeanTween.rotateAround(gameObject, new Vector3(-1, 0, 0), 90, 1).setOnComplete(() =>
+                    LeanTween.rotateAround(gameObject, transform.parent.up, 90, 1).setOnComplete(() =>
                     {
                         //_rotatoryRecipient.CheckRotation();
                         _state = State.NON_PRESSED;
