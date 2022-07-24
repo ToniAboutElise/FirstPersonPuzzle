@@ -14,6 +14,9 @@ public class PuzzleManager : MonoBehaviour
         COMPLETED,
     }
 
+    public delegate void OnPuzzleCompleted();
+    public OnPuzzleCompleted onPuzzleCompleted;
+
     private void Awake()
     {
         foreach (GameObject gameObject in _gameObjectsToActivateWhenSolved)
@@ -43,5 +46,7 @@ public class PuzzleManager : MonoBehaviour
         {
             puzzleSolvedConsequence.InvokeConsequence();
         }
+
+        onPuzzleCompleted.Invoke();
     }
 }
