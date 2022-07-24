@@ -48,8 +48,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _gameObjectsToActivateWhenSolved:
   - {fileID: 4897649745316687457}
+  - {fileID: 0}
   _gameObjectsToDeactivateWhenSolved:
   - {fileID: 3192762553713366620}
+  - {fileID: 0}
   _puzzleSolvedConsequences: []
   _rubickettePuzzlePieces:
   - {fileID: 3201536499103913502}
@@ -389,6 +391,10 @@ PrefabInstance:
       propertyPath: _targetLocalEulerAngles.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6507079447007020529, guid: 036899cb33d9bbf48a94b8190125e934, type: 3}
+      propertyPath: _rubickettePuzzlePieceState
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7236357785882948123, guid: 036899cb33d9bbf48a94b8190125e934, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -535,6 +541,10 @@ PrefabInstance:
     - target: {fileID: 6507079447007020529, guid: 036899cb33d9bbf48a94b8190125e934, type: 3}
       propertyPath: _targetLocalEulerAngles.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6507079447007020529, guid: 036899cb33d9bbf48a94b8190125e934, type: 3}
+      propertyPath: _rubickettePuzzlePieceState
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2800452654655497526, guid: 036899cb33d9bbf48a94b8190125e934, type: 3}
@@ -683,6 +693,10 @@ PrefabInstance:
       propertyPath: _targetLocalEulerAngles.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6507079447007020529, guid: 036899cb33d9bbf48a94b8190125e934, type: 3}
+      propertyPath: _rubickettePuzzlePieceState
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7236357785882948123, guid: 036899cb33d9bbf48a94b8190125e934, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -821,6 +835,10 @@ PrefabInstance:
     - target: {fileID: 6507079447007020529, guid: 036899cb33d9bbf48a94b8190125e934, type: 3}
       propertyPath: _targetLocalEulerAngles.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6507079447007020529, guid: 036899cb33d9bbf48a94b8190125e934, type: 3}
+      propertyPath: _rubickettePuzzlePieceState
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2800452654655497526, guid: 036899cb33d9bbf48a94b8190125e934, type: 3}
@@ -969,6 +987,10 @@ PrefabInstance:
       propertyPath: _targetLocalEulerAngles.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6507079447007020529, guid: 036899cb33d9bbf48a94b8190125e934, type: 3}
+      propertyPath: _rubickettePuzzlePieceState
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7236357785882948123, guid: 036899cb33d9bbf48a94b8190125e934, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -1116,6 +1138,10 @@ PrefabInstance:
       propertyPath: _targetLocalEulerAngles.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6507079447007020529, guid: 036899cb33d9bbf48a94b8190125e934, type: 3}
+      propertyPath: _rubickettePuzzlePieceState
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2800452654655497526, guid: 036899cb33d9bbf48a94b8190125e934, type: 3}
     - {fileID: 8799329189553940298, guid: 036899cb33d9bbf48a94b8190125e934, type: 3}
@@ -1258,6 +1284,10 @@ PrefabInstance:
     - target: {fileID: 6507079447007020529, guid: 036899cb33d9bbf48a94b8190125e934, type: 3}
       propertyPath: _targetLocalEulerAngles.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6507079447007020529, guid: 036899cb33d9bbf48a94b8190125e934, type: 3}
+      propertyPath: _rubickettePuzzlePieceState
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2800452654655497526, guid: 036899cb33d9bbf48a94b8190125e934, type: 3}
@@ -1402,6 +1432,10 @@ PrefabInstance:
       propertyPath: _targetLocalEulerAngles.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6507079447007020529, guid: 036899cb33d9bbf48a94b8190125e934, type: 3}
+      propertyPath: _rubickettePuzzlePieceState
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2800452654655497526, guid: 036899cb33d9bbf48a94b8190125e934, type: 3}
     - {fileID: 8799329189553940298, guid: 036899cb33d9bbf48a94b8190125e934, type: 3}
@@ -1496,7 +1530,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: f6a0db11528506648aaff573d579abfc, type: 3}
       propertyPath: m_Materials.Array.data[2]
       value: 
-      objectReference: {fileID: 2100000, guid: 87104949ec0c2dd47b801699dd820e53, type: 2}
+      objectReference: {fileID: 2100000, guid: aa1108b173aa9444caa6392e90767d68, type: 2}
     - target: {fileID: 919132149155446097, guid: f6a0db11528506648aaff573d579abfc, type: 3}
       propertyPath: m_Name
       value: rubickettepuzzleButton
@@ -1661,6 +1695,10 @@ PrefabInstance:
     - target: {fileID: 6507079447007020529, guid: 036899cb33d9bbf48a94b8190125e934, type: 3}
       propertyPath: _targetLocalEulerAngles.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6507079447007020529, guid: 036899cb33d9bbf48a94b8190125e934, type: 3}
+      propertyPath: _rubickettePuzzlePieceState
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2800452654655497526, guid: 036899cb33d9bbf48a94b8190125e934, type: 3}

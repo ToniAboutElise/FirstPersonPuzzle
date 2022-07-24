@@ -666,8 +666,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _gameObjectsToActivateWhenSolved:
   - {fileID: 467533406}
+  - {fileID: 0}
   _gameObjectsToDeactivateWhenSolved:
   - {fileID: 2073474298}
+  - {fileID: 0}
   _puzzleSolvedConsequences: []
   _spinningObjects:
   - {fileID: 8149403246847992112}

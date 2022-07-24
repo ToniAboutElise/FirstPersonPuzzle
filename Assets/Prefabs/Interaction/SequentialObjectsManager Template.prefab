@@ -191,6 +191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28392b4610e8f9f4e9fcb537c363b242, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _interactableObject: {fileID: 0}
   _lightUpColorColor: {r: 0.8509804, g: 0.13333334, b: 0.13333334, a: 1}
   _disabledColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1 &3676609801581910719
@@ -302,6 +303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28392b4610e8f9f4e9fcb537c363b242, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _interactableObject: {fileID: 0}
   _lightUpColorColor: {r: 0.4117647, g: 0, b: 1, a: 1}
   _disabledColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1 &4373262708563017030
@@ -413,6 +415,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28392b4610e8f9f4e9fcb537c363b242, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _interactableObject: {fileID: 0}
   _lightUpColorColor: {r: 0.6901961, g: 0.68235296, b: 0.07450981, a: 1}
   _disabledColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1 &7228234760003935656
@@ -425,6 +428,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7228234760003935658}
   - component: {fileID: 7228234760003935657}
+  - component: {fileID: 1822119957}
   m_Layer: 0
   m_Name: SequentialObjectsManager Template
   m_TagString: Untagged
@@ -441,7 +445,7 @@ Transform:
   m_GameObject: {fileID: 7228234760003935656}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.154, y: 0.812, z: -17.107}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3.6217806, y: 3.621781, z: 3.6217806}
   m_Children:
   - {fileID: 504825552906479926}
   - {fileID: 621344767914830635}
@@ -466,8 +470,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _gameObjectsToActivateWhenSolved:
   - {fileID: 7671872408021094331}
+  - {fileID: 0}
   _gameObjectsToDeactivateWhenSolved:
   - {fileID: 744486055828565967}
+  - {fileID: 0}
+  _puzzleSolvedConsequences:
+  - {fileID: 1822119957}
   _sequentialObjectsInCorrectOrder:
   - {fileID: 7671751920483986265}
   - {fileID: 4656381963989163558}
@@ -476,6 +484,22 @@ MonoBehaviour:
   - {fileID: 7671751920483986265}
   - {fileID: 4656381963989163558}
   _currentSequentialObjectsOrder: []
+--- !u!114 &1822119957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7228234760003935656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1718ef0c0a15e249a86d977cbbe9f47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _consequenceType: 0
+  _affectedGameObject: {fileID: 0}
+  _targetPosition: {x: -10.294, y: -3.08, z: -17.482}
+  _time: 8
 --- !u!1 &7671872408021094331
 GameObject:
   m_ObjectHideFlags: 0
@@ -500,13 +524,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7671872408021094331}
-  m_LocalRotation: {x: 0.49999973, y: 0.49999973, z: -0.50000024, w: 0.50000024}
-  m_LocalPosition: {x: 0, y: 0.000086054206, z: 0}
-  m_LocalScale: {x: 0.0089617, y: 0.0089617, z: 0.0089617}
+  m_LocalRotation: {x: 0.70710677, y: -0.00000017881389, z: -0.7071067, w: 0.0000007450579}
+  m_LocalPosition: {x: 3.188, y: -0.023, z: 0}
+  m_LocalScale: {x: 0.007358183, y: 0.007358183, z: 0.007358183}
   m_Children: []
   m_Father: {fileID: 7228234760003935658}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: -180}
 --- !u!212 &6475923072311447342
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -53,8 +53,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _gameObjectsToActivateWhenSolved:
   - {fileID: 5878502234026899952}
+  - {fileID: 0}
   _gameObjectsToDeactivateWhenSolved:
   - {fileID: 8445866238007255188}
+  - {fileID: 0}
+  _puzzleSolvedConsequences: []
   _spinningObjects:
   - {fileID: 488070321338874482}
   - {fileID: 2687775120526695102}
@@ -86,7 +89,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5878502234026899952}
   m_LocalRotation: {x: 0.5, y: -0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: 0.32654184, y: 0, z: 4.4000006}
+  m_LocalPosition: {x: -0.36, y: -0, z: 4.4}
   m_LocalScale: {x: 0.086292304, y: 0.0862923, z: 0.08629229}
   m_Children: []
   m_Father: {fileID: 488070321203306116}
@@ -168,7 +171,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8445866238007255188}
   m_LocalRotation: {x: 0.5, y: -0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: 0.33, y: -0, z: 4.4}
+  m_LocalPosition: {x: -0.36, y: 0, z: 4.4}
   m_LocalScale: {x: 0.086292304, y: 0.0862923, z: 0.0862923}
   m_Children: []
   m_Father: {fileID: 488070321203306116}
