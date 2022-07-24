@@ -5,7 +5,6 @@ using UnityEngine;
 public class DissolvableObject : InteractableObject
 {
     [SerializeField] private Renderer _renderer;
-    [SerializeField] private Collider _collider;
 
     public override void StartInteracting()
     {

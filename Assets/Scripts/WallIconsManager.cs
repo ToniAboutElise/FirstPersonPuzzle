@@ -8,7 +8,6 @@ public class WallIconsManager : MonoBehaviour
     [SerializeField] private GameObject _objectToDeactivateWhenCompleted;
     [SerializeField] private GameObject _objectToActivateWhenCompleted;
     private int _currentPuzzlesSolved = 0;
-    private int _targetPuzzlesSolved;
 
     private void Awake()
     {
@@ -22,7 +21,7 @@ public class WallIconsManager : MonoBehaviour
     {
         _currentPuzzlesSolved++;
 
-        if(_currentPuzzlesSolved == _targetPuzzlesSolved)
+        if(_currentPuzzlesSolved == _targetPuzzles.Count)
         {
             AllRequiredPuzzlesCompleted();
         }

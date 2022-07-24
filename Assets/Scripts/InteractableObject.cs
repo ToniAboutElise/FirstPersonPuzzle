@@ -7,7 +7,7 @@ public class InteractableObject : MonoBehaviour
 {
     [Header("Leave Interactable object null if you want it to be this GameObject")]
     [SerializeField] protected GameObject _interactableObject;
-    private Collider _collider;
+    protected Collider _collider;
 
     public Collider GetCollider() { return _collider; }
 
